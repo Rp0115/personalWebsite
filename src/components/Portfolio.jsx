@@ -9,14 +9,24 @@ const SOCIAL = [
 ]
 
 const CAREER_ENTRIES = [
-  // {
-  //   type: 'education',
-  //   headline: 'M.S. Computer Science',
-  //   organization: 'University of Pennsylvania',
-  //   period: 'Aug 2026 – May 2028',
-  //   body: 'Graduate student in Computer Science at the University of Pennsylvania for the Masters of Science in Computer Science.',
-  //   tags: ['Algorithms', 'Systems'],
-  // },
+  {
+    type: 'education',
+    headline: 'M.S. Computer Science',
+    organization: 'University of Pennsylvania',
+    period: 'Aug 2026 – May 2028',
+    body: 'Graduate student in Computer Science. Coursework includes software systems, computer vision, ML.',
+    tags: ['Algorithms', 'Systems', 'Computer Vision'],
+    current: true,
+  },
+  {
+    type: 'work',
+    headline: 'Software Engineering and QA Intern',
+    organization: 'SnapRefund',
+    period: 'Jun 2026 - Aug 2026',
+    body: 'Streamlining account setups in test and staging environments, and API testing to ensure system stability.',
+    employment: 'Internship',
+    tags: ['AWS', 'API testing', 'Nuxt.js']
+  },
   {
     type: 'education',
     headline: 'B.S. Computer Science',
@@ -24,7 +34,6 @@ const CAREER_ENTRIES = [
     period: 'Aug 2023 – May 2026',
     body: 'GPA 3.9/4.0. Coursework includes software design, OS and systems programming, data structures and algorithms, ML, database systems, and probability.',
     tags: ['Algorithms', 'Systems', 'Machine learning'],
-    current: true,
   },
   {
     type: 'work',
@@ -32,7 +41,6 @@ const CAREER_ENTRIES = [
     organization: 'Temple University',
     period: 'Feb 2026 – Present',
     body: 'Building a multimodal VLM pipeline (MiniGPT4-Video, Mistral-7B) for binary stress classification, with token balancing, Toeplitz signal transforms for ViT, and LoRA training.',
-    current: true,
     employment: 'Research',
     tags: ['PyTorch', 'HuggingFace', 'LoRA'],
   },
@@ -92,7 +100,7 @@ const GREP_CAREER_PATTERN =
 
 const ABOUT_FACTS = {
   location: 'Philadelphia, PA',
-  degree: 'B.S. Computer Science · Temple University',
+  degree: 'Masters in Computer Science · Uniersity of Pennsylania',
   focus: 'Applied software engineering, computer vision, ML, and full-stack systems',
 }
 
