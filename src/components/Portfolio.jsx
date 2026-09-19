@@ -4,7 +4,7 @@ import SkillLogos from './SkillLogos.jsx'
 const SOCIAL = [
   { label: 'LinkedIn', href: 'https://linkedin.com/in/riju-pant', icon: 'in' },
   { label: 'GitHub', href: 'https://github.com/Rp0115', icon: 'gh' },
-  { label: 'Email', href: 'mailto:riju0115@gmail.com', icon: 'mail' },
+  { label: 'Email', href: 'mailto:riju.rp.pant@gmail.com', icon: 'mail' },
   { label: 'LeetCode', href: 'https://leetcode.com/u/riju0115/', icon: 'lc' },
 ]
 
@@ -14,7 +14,7 @@ const CAREER_ENTRIES = [
     headline: 'M.S. Computer Science',
     organization: 'University of Pennsylvania',
     period: 'Aug 2026 – May 2028',
-    body: 'Graduate student in Computer Science. Coursework includes software systems, computer vision, ML.',
+    body: 'Graduate student in Computer Science. Coursework includes software and distributed systems, computer vision, ML.',
     tags: ['Algorithms', 'Systems', 'Computer Vision'],
     current: true,
   },
@@ -23,7 +23,7 @@ const CAREER_ENTRIES = [
     headline: 'Software Engineering and QA Intern',
     organization: 'SnapRefund',
     period: 'Jun 2026 - Aug 2026',
-    body: 'Streamlining account setups in test and staging environments, and API testing to ensure system stability.',
+    body: 'Engineered an AWS Lambda proxy to automate payment verification, automated test suites across 20+ backend endpoints, and accelerated onboarding using Vue.js.',
     employment: 'Internship',
     tags: ['AWS', 'API testing', 'Nuxt.js']
   },
@@ -32,7 +32,7 @@ const CAREER_ENTRIES = [
     headline: 'B.S. Computer Science',
     organization: 'Temple University',
     period: 'Aug 2023 – May 2026',
-    body: 'GPA 3.9/4.0. Coursework includes software design, OS and systems programming, data structures and algorithms, ML, database systems, and probability.',
+    body: 'GPA 3.9/4.0. Coursework includes software design, OS and systems programming, computer architecture, data structures and algorithms, ML, database systems, and probability.',
     tags: ['Algorithms', 'Systems', 'Machine learning'],
   },
   {
@@ -53,24 +53,6 @@ const CAREER_ENTRIES = [
     employment: 'Internship',
     tags: ['Python', 'YOLO', 'OpenCV'],
   },
-  // {
-  //   type: 'work',
-  //   headline: 'Full-stack Engineer',
-  //   organization: 'City Traffic Simulator',
-  //   period: 'Oct 2025 – Dec 2025',
-  //   body: 'Traffic simulation in React and Firebase: async vehicle movement, collision detection, synchronized lights, BFS flood-fill flow, and Auth/Firestore for saved city layouts.',
-  //   employment: 'Project',
-  //   tags: ['React', 'Firebase', 'Algorithms'],
-  // },
-  // {
-  //   type: 'work',
-  //   headline: 'Machine Learning Researcher',
-  //   organization: 'Breast Cancer Classification',
-  //   period: 'Jun 2025 – Jul 2025',
-  //   body: 'End-to-end pipeline on a clinical dataset; compared SVM, logistic regression, and random forest with 5-fold CV and tuning—SVM (linear) reached 96.3% accuracy and 0.95 F1.',
-  //   employment: 'Research',
-  //   tags: ['Python', 'Scikit-learn', 'ML'],
-  // },
   {
     type: 'work',
     headline: 'AI Therapist Developer',
@@ -106,6 +88,13 @@ const ABOUT_FACTS = {
 
 const FEATURED_PROJECTS = [
   {
+    project_name: 'ApexAI Formula 1 Stats',
+    tech_stack: ['AWS', 'Spring Boot', 'React', 'PostgreSQL', 'Gemini API'],
+    description:
+      'Natural language telemetry platform querying Formula 1 data via hybrid RAG with pgvector, real-time SSE streaming with Gemini, and a containerized Spring Boot backend on AWS.',
+    href: 'https://github.com/Rp0115/apexai',
+  },
+  {
     project_name: 'City Traffic Simulator',
     tech_stack: ['React', 'Firebase'],
     description:
@@ -113,17 +102,10 @@ const FEATURED_PROJECTS = [
     href: 'https://github.com/Rp0115/final-project-02-citytraffic',
   },
   {
-    project_name: 'Breast Cancer Classification Research',
-    tech_stack: ['Python', 'Sci-kit Learn'],
-    description:
-      'End-to-end pipeline on a clinical dataset; compared SVM, logistic regression, and random forest with 5-fold CV and tuning—SVM (linear) reached 96.3% accuracy and 0.95 F1',
-    href: 'https://github.com/iggyw1g/Breast-Cancer-Classification-Project',
-  },
-  {
     project_name: 'EcoSteps',
-    tech_stack: ['Python', 'Scikit-learn'],
+    tech_stack: ['React Native', 'Expo', 'TypeScript', 'Firebase'],
     description:
-      'End-to-end ML pipeline comparing SVM, logistic regression, and random forest with cross-validation and hyperparameter tuning.',
+      'Gamified mobile app incentivizing eco-friendly transportation choices through activity tracking, level progression, and redeemable rewards powered by Firebase.',
     href: 'https://github.com/PRivas1/EcoSteps',
   },
 ]
@@ -813,7 +795,7 @@ export default function Portfolio() {
             <span className="text-accent">Riju Pant</span>
           </h1>
           <p className="intro__lede">
-            Applied software development engineer focused on computer vision, machine learning, and full-stack products. This page is a single scroll through
+            Software Development Engineer specializing in distributed systems, cloud architecture, and scalable backend services. This page is a single scroll through
             who I am, what I use, and what I've shipped.
           </p>
           <p>
